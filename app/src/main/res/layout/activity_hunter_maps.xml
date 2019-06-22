@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MapActivity.HunterMapsActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBarId"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorBlack"
+                app:title="Tech Hunter"
+                app:titleTextColor="@color/colorWhite"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/mapHunt"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MapActivity.HunterMapsActivity" />
+
+                <LinearLayout
+                    android:id="@+id/expertLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorLightAsh"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/choice"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <RadioButton
+                            android:id="@+id/rbOption1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:text="Computer_phone"
+                            android:textSize="17sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbOption2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:text="Electrical"
+                            android:textSize="17sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbOption3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:text="Water_Gas"
+                            android:textSize="17sp"/>
+
+                        <RadioButton
+                            android:id="@+id/rbOption4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:text="Bike_Car"
+                            android:textSize="17sp" />
+                        <RadioButton
+                            android:id="@+id/rbOption5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:text="IT_Expert"
+                            android:textSize="17sp" />
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btnSubmitOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_button"
+                        android:padding="15dp"
+                        android:text="@string/submit"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/serviceLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/colorBrown"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Your Service"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorOrange"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/tvService"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="start"
+                        android:padding="12dp"
+                        android:textColorHint="@color/colorDeepAsh"
+                        android:hint="Service Name"
+                        android:textColor="@color/colorBlack"
+                        android:background="@color/colorBrown"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tvServicePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="start"
+                        android:padding="12dp"
+                        android:textColorHint="@color/colorDeepAsh"
+                        android:hint="@string/service_price"
+                        android:textColor="@color/colorBlack"
+                        android:background="@color/colorBrown"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/serviceLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abril_fatface"
+                        android:gravity="start"
+                        android:padding="12dp"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colorDeepAsh"
+                        android:hint="Service Location"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:background="@drawable/custom_edit"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="2">
+                        <Button
+                            android:id="@+id/btnCancelService"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_button"
+                            android:padding="15dp"
+                            android:text="Cancel"
+                            android:textSize="15sp" />
+                        <Button
+                            android:id="@+id/btnConService"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_button"
+                            android:padding="15dp"
+                            android:text="Confirm"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/btnFindExpert"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="Find"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header_hunter"
+            app:menu="@menu/hunter_menu_item"/>
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

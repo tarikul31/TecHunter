@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navHnProfile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"/>
+
+    <!--<item android:id="@+id/navHnReview"-->
+        <!--android:icon="@drawable/ic_stars_review"-->
+        <!--android:title="Review"/>-->
+
+    <item android:id="@+id/navHnFaq"
+        android:icon="@drawable/ic_help_outline"
+        android:title="FAQ"/>
+
+    <item android:id="@+id/navHnLogout"
+        android:icon="@drawable/logout"
+        android:title="Logout"/>
+
+</menu>

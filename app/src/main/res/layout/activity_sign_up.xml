@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/abril_fatface"
+            android:gravity="center"
+            android:padding="40dp"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorFront"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text"
+        android:fontFamily="@font/cagliostro"
+        android:hint="@string/email"
+        android:inputType="textNoSuggestions"
+        android:padding="15dp"
+        android:textColor="@color/colorFront"
+        android:textColorHint="@color/colorLightAsh"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text"
+        android:fontFamily="@font/cagliostro"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/colorFront"
+        android:textColorHint="@color/colorLightAsh"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etConfirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text"
+        android:fontFamily="@font/cagliostro"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/colorFront"
+        android:textColorHint="@color/colorLightAsh"
+        android:textSize="15sp" />
+
+    <RadioGroup
+        android:id="@+id/rgUserId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/rbHunterId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/hunter"
+            android:textColor="@color/colorFront"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/rbProviderId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="@string/provider"
+            android:textColor="@color/colorFront"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_button"
+        android:fontFamily="@font/cagliostro"
+        android:text="@string/save"
+        android:textColor="@color/colorFront"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <!--<Button-->
+        <!--android:id="@+id/btnRefresh"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="@drawable/edit_button"-->
+        <!--android:fontFamily="@font/cagliostro"-->
+        <!--android:text="Refresh"-->
+        <!--android:textColor="@color/colorFront"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/back_button"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/back_black"
+            android:gravity="center"
+            android:paddingStart="2dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="10dp"
+            android:text="@string/back"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

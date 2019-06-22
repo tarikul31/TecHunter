@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:orientation="vertical"
+    tools:context=".Profile.HunterProfile">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivCusProfile"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@color/colorBlack"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pro" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/cusFullNameId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorBackground"
+                android:hint="@string/full_name"
+                android:inputType="textNoSuggestions"
+                android:padding="15dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLightAsh"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/cusPhoneId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorBackground"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:padding="15dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLightAsh"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/cusEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorBackground"
+                android:hint="@string/email"
+                android:inputType="textNoSuggestions"
+                android:padding="15dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLightAsh"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/cusAddressId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorBackground"
+                android:hint="@string/address"
+                android:padding="15dp"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLightAsh"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnCusSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edit_button"
+                android:padding="15dp"
+                android:text="@string/submit"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

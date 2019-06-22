@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "40543309424",
+    "firebase_url": "https://techunter-2ef0d.firebaseio.com",
+    "project_id": "techunter-2ef0d",
+    "storage_bucket": "techunter-2ef0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40543309424:android:d38c04d959814e59",
+        "android_client_info": {
+          "package_name": "softmaticbd.com.techunter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40543309424-c0mt6dbeepov9ai04idg561gf00apch2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "softmaticbd.com.techunter",
+            "certificate_hash": "2927d839565e319ae2987ea74acf9a2cf39e5cc0"
+          }
+        },
+        {
+          "client_id": "40543309424-10vcea6ck6n24pgrv6dbv9278kbgsff4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5bNK0ny4kj51K0ZL3Muu4oYwzQj-iwZ8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40543309424-10vcea6ck6n24pgrv6dbv9278kbgsff4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

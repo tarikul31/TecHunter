@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:orientation="vertical"
+    tools:context=".Operation.ExpertiseActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarId"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/custom_background"
+        app:title="Provider Expertise"
+        app:titleTextColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/edit_button"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:weightSum="2"
+                android:background="@drawable/edit_text">
+
+                <TextView
+                    android:id="@+id/tvExpertId"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.70"
+                    android:layout_height="wrap_content"
+                    android:hint="Service Name"
+                    android:padding="15dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorLightAsh"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerExpId"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.30"
+                    android:layout_height="match_parent">
+
+                </Spinner>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvExpPriceId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text"
+                android:hint="@string/service_price"
+                android:padding="15dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLightAsh"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnExpSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_button"
+                android:padding="15dp"
+                android:text="@string/submit"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

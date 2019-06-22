@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">TecHunter</string>
+    <string name="title_activity_hunter_maps">Map</string>
+    <string name="tech_hunter">Find Your Technician</string>
+    <string name="user">User</string>
+    <string name="login_as">Login As</string>
+    <string name="user_name">User Name</string>
+    <string name="textSignIn">Do you Have an Account ?</string>
+    <string name="textSignUp">Already Have an Account ?</string>
+    <string name="create">Create</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="submit">Submit</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="title_activity_customer_maps">Map</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="sign_in">Sign In</string>
+    <string name="hunter">Hunter</string>
+    <string name="provider">Provider</string>
+    <string name="choice">Choose Your Wanted Service</string>
+    <string name="service_name">Service Name</string>
+    <string name="review_here">Review Here</string>
+    <string name="service_price">Service price</string>
+    <string name="accept">Accept</string>
+    <string name="operation_complete">Operation Complete</string>
+    <string name="reset_password">Reset Password</string>
+
+    <string-array name="service">
+        <item>Computer_Phone</item>
+        <item>Electrical</item>
+        <item>Water_Gash</item>
+        <item>Bike_Car</item>
+        <item>Call_IT</item>
+    </string-array>
+</resources>
