@@ -8,4 +8,6 @@ Initialy for payment purpose we use cash on service
 # Using Technology
 Java,
 Google Map API,
-Firebase Database
+Firebase Database,
+Retrofitb-2,
+Recycler View
